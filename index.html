@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  height:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  /* 🔽 ONLINE IMAGE BACKGROUND */
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Loader box */
+.progress-box{
+  width:85%;
+  max-width:360px;
+  height:24px;
+  background: linear-gradient(#2c3e50, #1a252f);
+  border:2px solid black;
+  padding:3px;
+}
+
+/* Loading bar */
+.progress{
+  height:100%;
+  width:0%;
+  background: linear-gradient(#4cff00, #1fa800);
+  animation: loading 4s linear infinite;
+}
+
+@keyframes loading{
+  0%{ width:0%; }
+  100%{ width:100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-box">
+  <div class="progress"></div>
+</div>
+
+</body>
+</html>
